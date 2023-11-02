@@ -13,7 +13,7 @@ This repository contains a collection of small-scale and beginner-friendly React
   <br><br>
 
 4. **Simple Developer's Profile Card** <br>
-      [Check](git@github.com:sgc93/Simple-React-Projects.git)
+      [Check](https://github.com/sgc93/Profile-Card)
 <br><br> ![profile_card](https://github.com/sgc93/Simple-React-Projects/assets/109880887/0ecc1287-edae-4b03-9114-78febcb5a76e) <br><br>
 
 ## Usage

@@ -1,0 +1,18 @@
+body {
+	background-color: rgb(62, 62, 62, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	color: aliceblue;
+	font-weight: 900;
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+
+h1 {
+	color: rgb(62, 62, 62);
+}

@@ -1,0 +1,3 @@
+[submodule "profile-card"]
+	path = profile-card
+	url = git@github.com:sgc93/Profile-Card.git

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pure-React</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="root1"></div>
+		<div id="root2"></div>
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+		<script>
+			// creating a component => h1 => clock
+			function clock() {
+				const time = new Date().toLocaleTimeString();
+				const [clock, setTime] = React.useState(time);
+
+				React.useEffect(function () {
+					setInterval(() => {
+						setTime(new Date().toLocaleTimeString());
+					}, 1000);
+				});
+
+				return React.createElement("h1", null, `${clock}`);
+			}
+
+			// create a component => header
+			function hello() {
+				return React.createElement("header", null, `Hello, React!`);
+			}
+
+			const root1 = ReactDOM.createRoot(document.getElementById("root1"));
+			const root2 = ReactDOM.createRoot(document.getElementById("root2"));
+			root1.render(React.createElement(hello));
+			root2.render(React.createElement(clock));
+		</script>
+	</body>
+</html>

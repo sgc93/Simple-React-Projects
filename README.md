@@ -5,16 +5,16 @@ This repository contains a collection of small-scale and beginner-friendly React
 ## Projects
 
 1. **Pure React**: Demonstrating How to use Pure React in .html file with HTML syntax<br>
-      [Check](https://github.com/sgc93/Simple-React-Projects/tree/main/01-pure-react)
+      [Check](https://github.com/sgc93/Simple-React-Projects/tree/main/pure-react)
 <br><br>
 2. **Pizza Menu**: a minimalistic component based disgn  <br>
-      [Check](https://github.com/sgc93/Simple-React-Projects/tree/main/01-pizza-menu)
-<br><br>
-![Screenshot-Project2](https://github.com/sgc93/Simple-React-Projects/assets/109880887/0874ecb2-4559-42ef-92ae-2d30f1077065) <br><br>
+      [Check](https://github.com/sgc93/Simple-React-Projects/tree/main/pizza-menu)
+<br><br> ![Screenshot](https://github.com/sgc93/Simple-React-Projects/assets/109880887/a5e67974-bff9-46d4-b9d6-a344b951f6b2)
+  <br><br>
 
 4. **Simple Developer's Profile Card** <br>
-      [Check](https://github.com/sgc93/Simple-React-Projects/tree/main/03-profile-card)
-<br><br> ![profile_card](https://github.com/sgc93/Simple-React-Projects/assets/109880887/ef572f14-5432-49c9-85c5-8b9c7033419e) <br><br>
+      [Check](git@github.com:sgc93/Simple-React-Projects.git)
+<br><br> ![profile_card](https://github.com/sgc93/Simple-React-Projects/assets/109880887/0ecc1287-edae-4b03-9114-78febcb5a76e) <br><br>
 
 ## Usage
 

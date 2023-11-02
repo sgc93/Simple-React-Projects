@@ -30,7 +30,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Acknowledgements
 
-- [Jonas](https://youtube.com/playlist?list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&si=VhNPHp4PtYTEP4tE)
+- [Jonas](https://github.com/jonasschmedtmann)
 
 ## About the Author
 

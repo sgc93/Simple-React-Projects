@@ -15,7 +15,12 @@ body {
 	margin: 100px auto;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 30px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
 }
 
 .numbers {

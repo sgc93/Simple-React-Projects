@@ -1,17 +1,34 @@
-const messages = [
-	"Learn React ⚛️",
-	"Apply for jobs 💼",
-	"Invest your new income 🤑",
+const steps = [
+	"JSX (JavaScript XML)",
+	"Components and Props",
+	"State and Lifecycle",
+	"Handling Events",
+	"Conditional Rendering",
+	"Lists and Keys",
+	"Forms and Controlled Components",
+	"Composition vs Inheritance",
+	"Handling Asynchronous Operations",
+	"React Router for Single Page Applications (SPAs)",
+	"Context API for Global State Management",
+	"Higher-Order Components (HOCs) and Render Props",
+	"Hooks (useState, useEffect, useContext, etc.)",
+	"Error Boundaries",
+	"Performance Optimization Techniques",
+	"Redux or MobX for Advanced State Management",
+	"Server-Side Rendering (SSR) and Client-Side Rendering (CSR)",
+	"Next.js or Gatsby.js for Building Static Sites",
+	"Testing with Jest and Enzyme",
+	"Advanced Patterns (Render-props, Compound Components, etc.)",
 ];
 
 export default function App() {
-	const step = 1;
+	const step = 13;
 	return (
 		<div className="steps">
 			<Header />
 			<div className="content">
 				<Nubmers step={step} />
-				<p className="message">{messages[step - 1]}</p>
+				<p className="message">Learn: {steps[step - 1]}</p>
 				<Buttons />
 			</div>
 		</div>
@@ -29,11 +46,20 @@ function Header() {
 
 function Nubmers({ step }) {
 	const remainingSteps = 40;
+	let level = "Beginner Level";
+	if (step > 5 && step <= 10) {
+		level = "Intermediate Level";
+	} else if (step > 10 && step <= 15) {
+		level = "Advanced Level";
+	} else if (step > 15) {
+		level = "Professional Level";
+	}
 	return (
 		<div className="numbers">
 			<div className="learned-steps active">1</div>
-			<div className="remain-step">
-				Remaining <span className="active">{remainingSteps}</span>
+			<div className="level">{level}</div>
+			<div className="remain-steps">
+				remaining <span className="active">{remainingSteps}</span>
 			</div>
 		</div>
 	);

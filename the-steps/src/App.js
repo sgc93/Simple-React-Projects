@@ -24,8 +24,9 @@ const steps = [
 ];
 
 export default function App() {
-	let [step, setStep] = useState(1);
-	let [remainingSteps, setRemainingSteps] = useState(19);
+	const [step, setStep] = useState(1);
+	const [remainingSteps, setRemainingSteps] = useState(19);
+	const [isOpen, setIsOpen] = useState(true);
 
 	function handlePrevious() {
 		if (step > 1) {
@@ -41,17 +42,34 @@ export default function App() {
 		}
 	}
 
+	function handleClose() {
+		setIsOpen(!isOpen);
+	}
+
 	return (
-		<div className="steps">
-			<Header />
-			<div className="content">
-				<Nubmers step={step} remainingSteps={remainingSteps} />
-				<p className="message">
-					Step {step}: {steps[step - 1]}
-				</p>
-				<Buttons handlePrevious={handlePrevious} handleNext={handleNext} />
-			</div>
-		</div>
+		<>
+			<CloseBtn handleClose={handleClose} />
+			{isOpen && (
+				<div className="steps">
+					<Header />
+					<div className="content">
+						<Nubmers step={step} remainingSteps={remainingSteps} />
+						<p className="message">
+							Step {step}: {steps[step - 1]}
+						</p>
+						<Buttons handlePrevious={handlePrevious} handleNext={handleNext} />
+					</div>
+				</div>
+			)}
+		</>
+	);
+}
+
+function CloseBtn({ handleClose }) {
+	return (
+		<button className="close" onClick={handleClose}>
+			&times;
+		</button>
 	);
 }
 

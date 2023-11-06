@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const steps = [
 	"JSX (JavaScript XML)",
 	"Components and Props",
@@ -22,14 +24,32 @@ const steps = [
 ];
 
 export default function App() {
-	const step = 13;
+	let [step, setStep] = useState(1);
+	let [remainingSteps, setRemainingSteps] = useState(19);
+
+	function handlePrevious() {
+		if (step > 1) {
+			setStep(step - 1);
+			setRemainingSteps(remainingSteps + 1);
+		}
+	}
+
+	function handleNext() {
+		if (step < 20) {
+			setStep(step + 1);
+			setRemainingSteps(remainingSteps - 1);
+		}
+	}
+
 	return (
 		<div className="steps">
 			<Header />
 			<div className="content">
-				<Nubmers step={step} />
-				<p className="message">Learn: {steps[step - 1]}</p>
-				<Buttons />
+				<Nubmers step={step} remainingSteps={remainingSteps} />
+				<p className="message">
+					Step {step}: {steps[step - 1]}
+				</p>
+				<Buttons handlePrevious={handlePrevious} handleNext={handleNext} />
 			</div>
 		</div>
 	);
@@ -44,8 +64,7 @@ function Header() {
 	);
 }
 
-function Nubmers({ step }) {
-	const remainingSteps = 40;
+function Nubmers({ step, remainingSteps }) {
 	let level = "Beginner Level";
 	if (step > 5 && step <= 10) {
 		level = "Intermediate Level";
@@ -56,7 +75,7 @@ function Nubmers({ step }) {
 	}
 	return (
 		<div className="numbers">
-			<div className="learned-steps active">1</div>
+			<div className="learned-steps active">{step}</div>
 			<div className="level">{level}</div>
 			<div className="remain-steps">
 				remaining <span className="active">{remainingSteps}</span>
@@ -65,13 +84,19 @@ function Nubmers({ step }) {
 	);
 }
 
-function Buttons() {
+function Buttons({ handlePrevious, handleNext }) {
 	return (
 		<div className="buttons">
-			<button style={{ backgroundColor: "#7950f2", color: "#fff" }}>
+			<button
+				style={{ backgroundColor: "#7950f2", color: "#fff" }}
+				onClick={handlePrevious}
+			>
 				Previous
 			</button>
-			<button style={{ backgroundColor: "#7950f2", color: "#fff" }}>
+			<button
+				style={{ backgroundColor: "#7950f2", color: "#fff" }}
+				onClick={handleNext}
+			>
 				Next
 			</button>
 		</div>

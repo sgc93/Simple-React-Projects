@@ -16,6 +16,10 @@ This repository contains a collection of small-scale and beginner-friendly React
       [Check](https://github.com/sgc93/Profile-Card)
 <br><br> ![profile_card](https://github.com/sgc93/Simple-React-Projects/assets/109880887/0ecc1287-edae-4b03-9114-78febcb5a76e) <br><br>
 
+5. **Minimalistic Roadmap to learn React** <bt>
+      [Check](https://github.com/sgc93/Simple-React-Projects/blob/main/react-roadmap) <br><br>
+      ![RoadMap](https://github.com/sgc93/Simple-React-Projects/blob/main/react-roadmap/public/assets/react%20roadmap.gif) <br><br>
+
 ## Usage
 
 Each project is contained within its own directory along with a dedicated README file, providing specific instructions on how to run the project and any additional information necessary for understanding and implementation.

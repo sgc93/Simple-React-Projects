@@ -28,15 +28,28 @@ body {
 	justify-content: space-between;
 }
 
+.numbers .remain-steps span,
 .numbers > div {
 	height: 40px;
 	aspect-ratio: 1;
-	background-color: #e7e7e7;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 18px;
+}
+
+.numbers .level {
+	width: 30%;
+	font-weight: 600;
+	color: #7950f2;
+}
+
+.numbers .remain-steps {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
 .numbers .active {

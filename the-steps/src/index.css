@@ -58,6 +58,7 @@ body {
 }
 
 .message {
+	height: 50px;
 	text-align: center;
 	font-size: 20px;
 	margin: 40px 0;

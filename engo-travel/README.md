@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# ዕንGO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to enGO, your minimal and user-friendly web app for managing and organizing your packing list before embarking on your next trip.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+enGO is a simple and intuitive web application built with React.js, designed to streamline the process of creating, editing, and organizing your packing list. With its clean and efficient interface, enGO helps you stay organized and ensures that you never forget to pack any essential items for your travels.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Easily add items, with their corresponding quantity, to your packing list.
+- Mark items completed or uncompleted.
+- Delete items that you no longer need to pack.
+- Clear your entire packing list with just one click and confirmation to alert.
+- Sort your items for a more organized packing process.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+Check out the live demo of enGO [https://engopacking.netlify.app)](https://engopacking.netlify.app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots + simple mockup
 
-### `npm run build`
+![enGO Mockup](https://github.com/sgc93/enGO/blob/main/public/assets/screenshots/enGO-mokeup.png) <br><br>
+![enGO Screenshot](https://github.com/sgc93/enGO/blob/main/public/assets/screenshots/enGO-screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run enGO locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository: `git clone https://github.com/your-username/engGO.git`
+2. Navigate to the project directory: `cd enGO`
+3. Install the dependencies: `npm install`
+4. Run the app: `npm start`
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/sgc93/enGO/blob/main/LICENSE) file for details.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For any inquiries or questions, please feel free to reach out at [smachewgedefaw@gmail.com](mailto:smachewgedefaw@gmail.com).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy 🎒Packing with ዕንGO!
